@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='/vendor/bootstrap/dist/css/bootstrap.css' />
+  </head>
+  <body>
+    <div class='container'>
+      <h1>Acme Products</h1>
+      <div class='well'>
+        Welcome to Acme Products!! Our top selling product is
+        <a href='/products/{{ topSeller.id}}'>{{topSeller.name}}</a>
+        <br />
+        <a href='/products'>See all of our products!</a>
+      </div>
+      <ul class='list-group'>
+        <li class='list-group-item'>
+          <pre>
+- create repo named acme_products
+- add me as collaborator
+- deploy to heroku
+          </pre>
+
+        </li>
+        <li class='list-group-item'>
+          Node Modules
+          <pre>
+- express
+- bootstrap
+- swig
+- method-override
+- body-parser
+          </pre>
+        </li>
+        <li class='list-group-item'>
+          Files
+          <pre>
+- db.js (~40 loc)
+- package.json
+- server.js (~30 loc)
+- routes/products.js (~21 loc)
+- views/index.html
+- views/products.html
+- views/product.html
+- views/error.html
+          </pre>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
