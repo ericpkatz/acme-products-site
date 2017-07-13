@@ -30,6 +30,10 @@ module.exports = {
     if(!product.name){
       throw 'product must have a name';
     }
+    if(isNaN(product.rating)*1){
+      throw 'rating must be a number';
+    }
+    product.rating = product.rating*1;
     var maxId = products.reduce(function(max, product){
       if(product.id > max){
         max = product.id;
