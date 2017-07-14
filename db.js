@@ -30,7 +30,7 @@ module.exports = {
     if(!product.name){
       throw 'product must have a name';
     }
-    if(isNaN(product.rating)*1){
+    if(!product.rating || isNaN(product.rating * 1)){
       throw 'rating must be a number';
     }
     product.rating = product.rating*1;
@@ -44,7 +44,7 @@ module.exports = {
     products.push(product);
   },
   deleteProduct: function(id){
-    products.filter(function(product){
+    products = products.filter(function(product){
       return product.id !== id;
     });
   },
